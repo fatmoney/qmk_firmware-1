@@ -1,0 +1,9 @@
+- enable symbols
+- left Enter
+- re-allocate right enter within home position
+- re-allocate delete within home position
+- |<- and ->| didn't work on terminal
+- re-allocate ^~|
+- re-design shift, layer switches allocation and sizes
+- resize keys right under the space bar
+

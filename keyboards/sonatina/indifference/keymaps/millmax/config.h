@@ -1,0 +1,15 @@
+#define MASTER_LEFT
+
+#define MATRIX_ROW_PINS { B2, B1, B0, D4 }
+#define MATRIX_COL_PINS { D6, D5, D2, C2, C4, C5 }
+
+#define MATRIX_ROW_PINS_RIGHT { D4, D5, D3, C6 }
+#define MATRIX_COL_PINS_RIGHT { C2, C4, C5, C7, B6, B7 }
+
+#define MATRIX_ROWS 8
+#define MATRIX_COLS 7
+
+#define DIODE_DIRECTION COL2ROW
+
+#define USE_SERIAL
+#define SOFT_SERIAL_PIN D3

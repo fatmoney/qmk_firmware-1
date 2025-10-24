@@ -1,0 +1,5 @@
+MCU = atmega32u2
+BOOTLOADER = atmel-dfu
+EXTRAKEY_ENABLE = yes
+ENCODER_ENABLE = yes
+CONSOLE_ENABLE = yes
