@@ -9,16 +9,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [1] = LAYOUT(
-        x, TD11, KC_UP, KC_DQUO, KC_QUOT, _, /**/ _, KC_LCBR, KC_RCBR, KC_MINUS, KC_AMPR, x,
+        x, TD11, KC_UP, KC_MINUS, KC_AT, KC_AMPR, /**/ _, KC_LCBR, KC_RCBR, _, KC_EXLM, x,
         x, KC_LEFT, KC_DOWN, KC_DEL, KC_RIGHT, KC_SPC,   /**/ KC_BSPC, KC_LPRN, KC_RPRN, KC_EQUAL, KC_DQUO, x,
         x, KC_PPLS, _,  KC_ASTR, TD7, TD6,                     /**/ KC_UNDS, KC_LBRC, KC_RBRC, KC_LT, KC_GT, x,
         x, x, x, _, CMD_ENT, L1_SPC, SFT_ENT, _, x, x, x
     ),
 
     [2] = LAYOUT(
-        x, _, _, _, KC_LT, KC_GT, /**/ _, KC_EQUAL, KC_ASTR, KC_MINS, KC_PPLS, x,
+        x, _, _, KC_MINUS, KC_LT, KC_GT, /**/ _, KC_EQUAL, KC_ASTR, _, KC_PPLS, x,
         x, KC_P1, KC_P2, KC_P3, KC_P4, KC_P5, /**/ KC_P6, KC_P7, KC_P8, KC_P9, KC_P0, x,
-        x, KC_DLR, KC_PERC, KC_CIRC, KC_HASH, KC_EXLM, /**/ _, _, _, _, KC_AMPR, KC_AT,
+        x, KC_DLR, KC_PERC, KC_CIRC, KC_HASH, _, /**/ _, _, _, _, _, x,
         x, x, x, KC_CAPS, _, KC_DOT, _, QK_BOOT, x, x, x
     )
 };
