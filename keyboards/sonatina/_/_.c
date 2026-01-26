@@ -1,12 +1,16 @@
 #include QMK_KEYBOARD_H
-#include "print.h"
+#include "local_keycodes.h"
 
-#ifdef TAP_DANCE_ENABLE
-    #include "tap_dance.c"
+#ifdef CONSOLE_ENABLE
+    #include "print.h"
 #endif
 
 #ifdef COMBO_ENABLE
     #include "combo.c"
+#endif
+
+#ifdef TAP_DANCE_ENABLE
+    #include "tap_dance.c"
 #endif
 
 #ifdef LEADER_ENABLE

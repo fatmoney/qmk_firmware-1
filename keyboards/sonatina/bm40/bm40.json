@@ -1,7 +1,0 @@
-{
-    "name": "BM40",
-    "vendorId": "0x4B50",
-    "productId": "0x3430",
-    "matrix": {"rows": 4, "cols": 12},
-    "layouts": {"keymap": []}
-  }
