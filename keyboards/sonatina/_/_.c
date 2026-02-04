@@ -1,5 +1,6 @@
 #include QMK_KEYBOARD_H
 // #include "local_keycodes.h"
+#include "custom_keycodes.h"
 
 #ifdef CONSOLE_ENABLE
     #include "print.h"
