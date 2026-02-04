@@ -1,6 +1,5 @@
 #define _COMBO_DEF(n, o, ...) X(n, o, __VA_ARGS__)
 #define COMBO_DEF(o, ...) _COMBO_DEF(__LINE__, o, __VA_ARGS__)
-
 #define COMBO_ID(n) combo_##n
 
 #define X(n, o, ...) \
