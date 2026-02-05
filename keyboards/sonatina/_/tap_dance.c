@@ -29,18 +29,20 @@ static void map(tap_dance_state_t *state, void *keycodes) {
     tap_code16(keycode);
 }
 
-#define dance(...) { \
+#define DANCE(...) { \
     .fn = { NULL, map, reset_hold }, \
     .user_data = (void *)&((td_kc_def_t){ __VA_ARGS__ }) \
 }
 
 tap_dance_action_t tap_dance_actions[] = {
-    dance(KC_SLSH, .hold=KC_QUES),
-    dance(KC_COLN, .hold=KC_SCLN),
-    dance(KC_GRV,  .hold=KC_TILD, .th=2),
-    dance(KC_BSLS, .hold=KC_PIPE),
-    // dance(KC_X, .hold=G(KC_LBRC)),
+    DANCE(KC_SLSH, .hold=KC_QUES),
+    DANCE(KC_COLN, .hold=KC_SCLN),
+    DANCE(KC_GRV,  .hold=KC_TILD, .th=2),
+    DANCE(KC_BSLS, .hold=KC_PIPE),
+    // DANCE(KC_X, .hold=G(KC_LBRC)),
 };
+
+#undef DANCE
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     return IS_QK_TAP_DANCE(keycode) ? 100 : TAPPING_TERM;

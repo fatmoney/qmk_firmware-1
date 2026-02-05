@@ -1,15 +1,15 @@
-#define _COMBO_DEF(n, o, ...) X(n, o, __VA_ARGS__)
-#define COMBO_DEF(o, ...) _COMBO_DEF(__LINE__, o, __VA_ARGS__)
+#define _DEF_COMBO(n, o, ...) X(n, o, __VA_ARGS__)
+#define DEF_COMBO(o, ...) _DEF_COMBO(__LINE__, o, __VA_ARGS__)
 #define COMBO_ID(n) combo_##n
 
 #define X(n, o, ...) \
     const uint16_t PROGMEM COMBO_ID(n)[] = { __VA_ARGS__, COMBO_END };
-    #include "combo_defs.h"
+    #include "combo_defs"
 #undef X
 
 #define X(n, o, ...) COMBO(COMBO_ID(n), o),
     combo_t key_combos[] = {
-        #include "combo_defs.h"
+        #include "combo_defs"
     };
 #undef X
 

@@ -12,3 +12,5 @@
 #define X(mod, key, o) &_##mod##key,
     const key_override_t *key_overrides[] = { KEY_OVERRIDES };
 #undef X
+
+#undef KEY_OVERRIDES

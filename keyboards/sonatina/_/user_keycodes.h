@@ -1,5 +1,3 @@
-#pragma once
-
 #define _ _______
 #define G_ENT MT(MOD_LGUI, KC_ENT)
 #define C_A MT(MOD_LCTL, KC_A)
