@@ -1,5 +1,4 @@
-#define _DEF_COMBO(n, o, ...) X(n, o, __VA_ARGS__)
-#define DEF_COMBO(o, ...) _DEF_COMBO(__LINE__, o, __VA_ARGS__)
+#define DEF_COMBO(o, ...) X(__LINE__, o, __VA_ARGS__)
 #define COMBO_ID(n) combo_##n
 
 #define X(n, o, ...) \
@@ -14,8 +13,7 @@
 #undef X
 
 #undef COMBO_ID
-#undef COMBO_DEF
-#undef _COMBO_DEF
+#undef DEF_COMBO
 
 uint8_t combo_ref_from_layer(uint8_t layer) {
     return 0; // YOUR BASE LAYER
