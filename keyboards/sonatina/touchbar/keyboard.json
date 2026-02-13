@@ -1,0 +1,32 @@
+{
+    "keyboard_name": "touchbar",
+    "manufacturer": "sonatina",
+    "processor": "STM32G0B1",
+    "bootloader": "stm32-dfu",
+    "usb": {
+        "device_version": "0.0.1",
+        "pid": "0x1001",
+        "vid": "0x8AA8"
+    },
+    "features": {
+        "bootmagic": true,
+        // "encoder": true,
+        // "tap_dance": true,
+        // "combo": true,
+        "mousekey": true
+    },
+    "matrix_pins": {
+        "direct": [
+            [null]
+        ]
+        // "custom": true,
+        // "custom_lite": true
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"x": 0, "y": 0, "matrix": [0, 0]}
+            ]
+        }
+    }
+}

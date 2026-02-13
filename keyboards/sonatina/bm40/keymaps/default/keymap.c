@@ -2,10 +2,10 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     LAYOUT(
-        0, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, 0,
-        0, C_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, S_DOT, 0,
+        QK_MAKE, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, 0,
+        TG(3), C_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, S_DOT, 0,
         0, S_Z, KC_X, KC_C, KC_V, KC_B, KC_B, KC_N, KC_M, TD(0), KC_TAB, 0,
-        0, 0, 0, KC_LALT, G_ENT, L1_SPC, L2_ENT, SS, 0, 0, 0
+        0, 0, 0, KC_LALT, G_ENT, TD(4), L2_ENT, SS, 0, 0, 0
     ),
 
     LAYOUT(
@@ -20,5 +20,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         0, KC_1, KC_2, KC_3, KC_4, KC_5, /**/ KC_6, KC_7, KC_8, KC_9, KC_0, 0,
         0, KC_0, KC_6, KC_7, KC_8, KC_9, /**/ _, _, _, _, _, 0,
         0, 0, 0, _, _, KC_DOT, _, _, 0, 0, 0
+    ),
+
+    LAYOUT(
+        0,0,0,0,0,0,0,0,0,0,0,0,
+        TG(0),0,0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,0
     )
 };

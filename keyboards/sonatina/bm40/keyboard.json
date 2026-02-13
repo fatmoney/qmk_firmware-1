@@ -16,7 +16,9 @@
         "tap_dance": true,
         "mousekey": true,
         "combo": true,
+        "leader": true,
         "keycode_string": true,
+        "unicode": true
         "key_override": true
     },
     "config": {

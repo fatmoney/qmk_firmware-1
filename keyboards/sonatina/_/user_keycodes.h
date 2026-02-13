@@ -14,5 +14,6 @@ enum {
 
     SS = G(S(KC_4)), // Screen Shot (macOS)
     EISU = KC_LNG2,
+    KANA = KC_LNG1,
     BACK = G(KC_LBRC) // Go back in the browser
 };

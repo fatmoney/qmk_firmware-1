@@ -16,8 +16,9 @@ static void reset_hold(tap_dance_state_t *state, void *user_data) {
     if (action != HOLD && action != TH) return;
 
     // layer_move(0);
+    // clear_mods();
     layer_clear();
-    clear_mods();
+    clear_keyboard();
 }
 
 static void map(tap_dance_state_t *state, void *keycodes) {
@@ -39,6 +40,7 @@ tap_dance_action_t tap_dance_actions[] = {
     DANCE(KC_COLN, .hold=KC_SCLN),
     DANCE(KC_GRV,  .hold=KC_TILD, .th=2),
     DANCE(KC_BSLS, .hold=KC_PIPE),
+    DANCE(KC_SPC, .hold=1, .th=2),
     // DANCE(KC_X, .hold=G(KC_LBRC)),
 };
 
